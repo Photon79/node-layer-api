@@ -269,6 +269,30 @@ layer.conversations.delete(cid, function(err, res) {
 });
 ```
 
+----------------------------------------
+
+### conversations.upload(cid, file, origin, [callback])
+
+[Upload Rich content](https://developer.layer.com/docs/platform/messages#rich-content) for use as message part in existing Conversation by providing conversation ID.
+
+##### Arguments
+
+ - `cid` - Conversation ID
+ - `file` - file resource (eg. `req.files` in Express.Js)
+ - `origin` - current URL (usually `reg.headers.origin`)
+ - `callback(err, res)` - *Optional* Callback function returns an error and response objects
+
+##### Examples
+
+```javascript
+layer.conversations.upload(cid, req.files[0], req.headers.origin, function(err, res) {
+  if (err) return console.error(err);
+
+  var rich_content_part = res;
+});
+```
+
+
 ## Messages
 
 Messages can be made up of one or many individual pieces of content.
