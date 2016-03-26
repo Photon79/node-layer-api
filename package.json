@@ -24,6 +24,7 @@
     "should": "^8.2.2"
   },
   "dependencies": {
+    "axios": "^0.9.1",
     "bluebird": "^3.3.2"
   }
 }
