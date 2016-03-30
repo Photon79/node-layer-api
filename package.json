@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "axios": "^0.9.1",
-    "bluebird": "^3.3.2"
+    "bluebird": "^3.3.2",
+    "jsrsasign": "^5.0.7"
   }
 }
